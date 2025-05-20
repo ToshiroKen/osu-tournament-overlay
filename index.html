@@ -1,13 +1,47 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+</head>
+
+<body style="background-color: black;">
+  <script type="module" src="/main.js"></script>
+
+  <!-- frame: Overlay -->
+  <div x-data="overlay" class="overlay" style="width: 1920px; height: 102px; ">
+    <!-- group: Left Details -->
+    <div class="box-1">
+      <div class="left-row-1">
+        <div class="title">No Artist - No Title</div>
+      </div>
+      <div class="left-row-2">
+        <div class="mapper">mapper</div>
+        <div class="mapper-name">Sillyp</div>
+        <div class="difficulty">difficulty</div>
+        <div class="difficulty-name">[4K] F u n d i n g</div>
+      </div>
+    </div>
+    <!-- group: Right Details -->
+    <div class="box-2">
+      <div class="right-details">
+        <div class="row-1">
+          <div class="od">OD</div>
+          <div class="od-value">7.5</div>
+          <div style="float: left;">&nbsp;&nbsp;/&nbsp;&nbsp;</div>
+          <div class="hp">HP</div>
+          <div class="hp-value">8</div>
+        </div>
+        <div class="row-2">
+          <div class="star-rating">Star Rating</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
 </html>
