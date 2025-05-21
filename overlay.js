@@ -45,7 +45,11 @@ Alpine.data('overlay', () => ({
         bpmFormatted = `${bpmMin}-${bpmMax} (${bpmCommon})`;
       }
 
-      const backgroundPath = directPath.beatmapBackground.replace(folders.songs, '').replaceAll('\\', '/');
+      // NOTE: For future reference: https://www.urlencoder.org/
+      // TODO: Sanitize the image URL path
+      // FIXME: Create better sanitizer for this that does not use external libraries
+      const backgroundPath = directPath.beatmapBackground.replace(folders.songs, '').replaceAll('\\', '/').replaceAll('\'', '%27');
+      // http://127.0.0.1:24050/files/beatmap/24840 David Wise - Krook's March/Castle_Crush.jpg
       // http://127.0.0.1:24050/files/beatmap/723624 The Flashbulb - Back of the Yards\back.jpg
       const filePath = "http://127.0.0.1:24050/files/beatmap/" + backgroundPath;
 
@@ -58,7 +62,7 @@ Alpine.data('overlay', () => ({
       this.stars = stars;
       this.beatmapLength = beatmapLength;
       this.bpm = bpmFormatted;
-      this.imageUrl = filePath;
+      this.updateImage(filePath);
     });
   },
 
@@ -70,6 +74,25 @@ Alpine.data('overlay', () => ({
     const paddedSeconds = String(seconds).padStart(2, '0');
 
     return `${minutes}:${paddedSeconds}`;
-  }
+  },
+
+  updateImage(filePath) {
+    try {
+      const img = new Image();
+      img.src = filePath;
+
+      img.onload = () => {
+        this.imageUrl = filePath;
+        this.loading = false;
+      };
+
+      img.onerror = () => {
+        console.error('Image failed to load');
+        this.loading = false;
+      };
+    } catch (e) {
+      console.log(e);
+    }
+  },
 
 }));
