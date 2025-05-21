@@ -14,16 +14,16 @@
   <!-- frame: Overlay -->
   <div x-data="overlay" class="overlay">
 
-    <div class="box-1">
+    <div class="box-1" :style="`background-image: url('${imageUrl}')`">
       <div class="inner-box">
         <div class="row-1">
-          <div class="title">Frums - Credits</div>
+          <div class="title" x-text="title">Frums - Credits</div>
         </div>
         <div class="row-2">
           <div class="mapper">mapper</div>
-          <div class="mapper-name">Sillyp</div>
+          <div class="mapper-name" x-text="mapperName">Sillyp</div>
           <div class="difficulty">difficulty</div>
-          <div class="difficulty-name">[4K] F u n d i n g</div>
+          <div class="difficulty-name" x-text="difficultyName">[4K] F u n d i n g</div>
         </div>
       </div>
     </div>
@@ -32,14 +32,14 @@
       <div class="inner-box">
         <div class="row-1">
           <div class="text">OD</div>
-          <div class="value">7.5</div>
+          <div class="value" x-text="odValue">7.5</div>
           <div class="text">&nbsp;/&nbsp;</div>
           <div class="text">HP</div>
-          <div class="value">8</div>
+          <div class="value" x-text="hpValue">8</div>
         </div>
         <div class="row-2">
           <div class="text">Star Rating</div>
-          <div class="value">3.35</div>
+          <div class="value" x-text="stars">3.35</div>
         </div>
       </div>
     </div>
@@ -48,11 +48,11 @@
       <div class="inner-box">
         <div class="row-1">
           <div class="text">Length</div>
-          <div class="value">1:36</div>
+          <div class="value" x-text="beatmapLength">1:36</div>
         </div>
         <div class="row-2">
           <div class="text">BPM</div>
-          <div class="value">179</div>
+          <div class="value" x-text="bpm">179</div>
         </div>
       </div>
     </div>
