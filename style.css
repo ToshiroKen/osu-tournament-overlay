@@ -46,13 +46,14 @@
   width: 1920px;
   height: 102px;
   color: white;
+  display: flex;
   /* border: 1pt solid white; */
 }
 
 .box-1 {
   /* border: 1pt solid rgb(0, 248, 54); */
   display: flex;
-  width: 944px;
+  width: 940px;
   height: 102px;
   background-image: url("card@2x.jpg");
   background-size: cover;
@@ -97,6 +98,108 @@
     }
   }
 
+}
+
+.box-2,
+.box-3,
+.box-4 {
+  /* border: 1pt solid rgb(0, 248, 54); */
+  display: flex;
+  width: 350px;
+  height: 102px;
+  background-color: #1a001aff;
+
+  .inner-box {
+    /* border: 1pt solid white; */
+    margin-top: 26px;
+    margin-left: 26px;
+    margin-right: 26px;
+    margin-bottom: 26px;
+    width: 100%;
+
+    .row-1 {
+      /* border: 1pt solid white; */
+      display: flex;
+      font-size: 16px;
+
+      div {
+        margin-right: 5px;
+      }
+
+      .text {
+        font-weight: 500;
+      }
+
+      .value {
+        font-weight: 800;
+      }
+    }
+
+    .row-2 {
+      /* border: 1pt solid white; */
+      display: flex;
+      margin-top: 13px;
+
+      div {
+        margin-right: 5px;
+      }
+
+      .text {
+        font-weight: 500;
+      }
+
+      .value {
+        font-weight: 800;
+      }
+    }
+
+  }
+}
+
+.box-3 {
+  width: 200px;
+}
+
+.box-4 {
+  width: 330px;
+
+  .inner-box {
+
+    .row-1 {
+      display: flex;
+
+      div {
+        margin-right: 10px;
+      }
+    }
+
+    .row-2 {
+      display: flex;
+
+      div {
+        margin-right: 10px;
+      }
+    }
+
+    .active {
+      color: yellow;
+    }
+
+  }
+}
+
+.box-5 {
+  width: 100px;
+  background-color: #1a001aff;
+  /* border: 1pt solid white; */
+
+  .logo {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    /* border: 1pt solid white; */
+  }
 }
 
 /* .box-1 {
