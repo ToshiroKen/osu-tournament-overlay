@@ -43,6 +43,23 @@ Alpine.data('overlay', () => ({
         const bpmMax = beatmap.stats.bpm.max;
         let bpmFormatted = bpmCommon;
 
+        //For highlighting the map type when certain conditions met
+        //The checksum needs to be hardcoded in order for the sequence to work
+        //This can be optimized for sure, this is the first iteration, just to make things "work"
+        const hash = beatmap.checksum;
+        this.isActive0 = (hash === "c67bff37d30a2157fc3da2aa4da73d2c"); //RC1
+        this.isActive1 = (hash === "567b06018ac9e759d075c2dd1dc971dd"); //RC2
+        this.isActive2 = (hash === "1d3f6c020b806ddd0e9acf1982859adc"); //RC3
+        this.isActive3 = (hash === "dd82e018c11ceb6d9f34ec0749cf0c66"); //RC4
+        this.isActive4 = (hash === "60b110301a1162d1fa3982d6dcf41791"); //LN1
+        this.isActive5 = (hash === "ef192521d8a2336765c031ae869e727e"); //LN2
+        this.isActive6 = (hash === "32f3fa20de6c61bfc7b54d13d60e6039"); //HB1
+        this.isActive7 = (hash === "1ea013c49625d079833a47a902cbcb6a"); //HB2
+        this.isActive8 = (hash === "cddd57b5dc32806c2c5eb8184b8cdc75"); //SV1
+        this.isActive9 = (hash === "d907d9f42d7d80f1c41afb85b2a45f35"); //SV2
+        this.isActive10 = (hash === "6349606d8a6fd96973722d34607333df"); //TB
+
+        
         if (bpmMin != bpmMax) {
           bpmFormatted = `${bpmMin}-${bpmMax} (${bpmCommon})`;
         }
