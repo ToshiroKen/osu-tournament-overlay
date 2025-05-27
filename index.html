@@ -8,7 +8,7 @@
   <title>Vite App</title>
 </head>
 
-<body style="background-color: #00FF00;">
+<body style="background-color: #181818;"> <!--#00FF00 - default -->>
   <script type="module" src="/main.js"></script>
 
   <!-- frame: Overlay -->
@@ -60,14 +60,14 @@
     <div class="box-4">
       <div class="inner-box">
         <div class="row-1">
-          <div class="value">RC1</div>
-          <div class="value">RC2</div>
-          <div class="value">RC3</div>
-          <div class="value">RC4</div>
-          <div class="value">LN1</div>
-          <div class="value">LN2</div>
-          <div class="value">HB1</div>
-          <div class="value">HB2</div>
+          <div class="value" :class="{'active': isActive0}">RC1</div>
+          <div class="value" :class="{'active': isActive1}">RC2</div>
+          <div class="value" :class="{'active': isActive2}">RC3</div>
+          <div class="value" :class="{'active': isActive3}">RC4</div>
+          <div class="value" :class="{'active': isActive4}">LN1</div>
+          <div class="value" :class="{'active': isActive5}">LN2</div>
+          <div class="value" :class="{'active': isActive6}">HB1</div>
+          <div class="value" :class="{'active': isActive7}">HB2</div>
         </div>
         <div class="row-2">
           <div class="value"></div>
@@ -80,9 +80,9 @@
           <div class="value"></div>
           <div class="value"></div>
           <div class="value"></div>
-          <div class="value">SV1</div>
-          <div class="value">SV2</div>
-          <div class="value">TB</div>
+          <div class="value" :class="{'active': isActive8}">SV1</div>
+          <div class="value" :class="{'active': isActive9}">SV2</div>
+          <div class="value" :class="{'active': isActive10}">TB</div>
         </div>
       </div>
     </div>
