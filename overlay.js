@@ -61,13 +61,15 @@ Alpine.data('overlay', () => ({
           "",  // SV2
           ""  // TB
         ];
+
         //Clear the isActiveN properties
         for (let i = 0; i < hash.length; i++) {
           this[`isActive${i}`] = false;
         }
+
         //Condition if the checksum values matches to any hashMap values, then gets the index based on matched checksum
         const index = hash.indexOf(beatmap.checksum);
-        if (index !== -1){
+        if (index !== -1) {
           this[`isActive${index}`] = true;
         }
 
