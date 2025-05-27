@@ -48,31 +48,29 @@ Alpine.data('overlay', () => ({
         //Tried to optimize the code, better than the previous.
         //Instructions: change only the checksum values of the beatmap you want to highlight based on the map type
         //To check, here's the link: http://127.0.0.1:24050/json/v2  then search for "checksum"
-        const hashMap = {
-          "": 0,  // RC1
-          "": 1,  // RC2
-          "": 2,  // RC3
-          "": 3,  // RC4
-          "": 4,  // LN1
-          "": 5,  // LN2
-          "": 6,  // HB1
-          "": 7,  // HB2
-          "": 8,  // SV1
-          "": 9,  // SV2
-          "": 10  // TB
-        };
-        //Purpose: to clear the isActiveN properties
-        //The N in the second field (i <= N) needs to be modified based on the total index of hashMap 
-        for (let i = 0; i <= 10; i++) {
+        const hash = [
+          "",  // RC1
+          "",  // RC2
+          "",  // RC3
+          "",  // RC4
+          "",  // LN1
+          "",  // LN2
+          "",  // HB1
+          "",  // HB2
+          "",  // SV1
+          "",  // SV2
+          ""  // TB
+        ];
+        //Clear the isActiveN properties
+        for (let i = 0; i < hash.length; i++) {
           this[`isActive${i}`] = false;
         }
         //Condition if the checksum values matches to any hashMap values, then gets the index based on matched checksum
-        const activeIndex = hashMap[beatmap.checksum];
-        if (activeIndex !== undefined){
-          this[`isActive${activeIndex}`] = true;
+        const index = hash.indexOf(beatmap.checksum);
+        if (index !== -1){
+          this[`isActive${index}`] = true;
         }
 
-        
         
         if (bpmMin != bpmMax) {
           bpmFormatted = `${bpmMin}-${bpmMax} (${bpmCommon})`;
