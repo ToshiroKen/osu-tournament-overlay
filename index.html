@@ -8,7 +8,7 @@
   <title>Vite App</title>
 </head>
 
-<body style="background-color: #181818;"> <!--#00FF00 - default -->>
+<body style="background-color: #00FF00;"> <!--#00FF00 - default -->
   <script type="module" src="/main.js"></script>
 
   <!-- frame: Overlay -->
@@ -44,6 +44,19 @@
       </div>
     </div>
 
+    <div class="box-6">
+      <div class="inner-box">
+        <div class="row-1">
+          <div class="text">Rice Count</div>
+          <div class="value" x-text="circlesValue">1234</div>
+        </div>
+        <div class="row-2">
+          <div class="text">Long Notes Count</div>
+          <div class="value" x-text="holdsValue">123</div>
+        </div>
+      </div>
+    </div>
+
     <div class="box-3">
       <div class="inner-box">
         <div class="row-1">
@@ -60,29 +73,18 @@
     <div class="box-4">
       <div class="inner-box">
         <div class="row-1">
-          <div class="value" :class="{'active': isActive0}">RC1</div>
-          <div class="value" :class="{'active': isActive1}">RC2</div>
-          <div class="value" :class="{'active': isActive2}">RC3</div>
-          <div class="value" :class="{'active': isActive3}">RC4</div>
-          <div class="value" :class="{'active': isActive4}">LN1</div>
-          <div class="value" :class="{'active': isActive5}">LN2</div>
-          <div class="value" :class="{'active': isActive6}">HB1</div>
-          <div class="value" :class="{'active': isActive7}">HB2</div>
+          <div class="value"></div>
+          <div class="value"></div>
+          <div class="value" :class="{'active': isActive0}">Stage 1</div>
+          <div class="value" :class="{'active': isActive1}">Stage 2</div>
+          <div class="value" :class="{'active': isActive2}">Stage 3</div>
         </div>
         <div class="row-2">
           <div class="value"></div>
           <div class="value"></div>
-          <div class="value"></div>
-          <div class="value"></div>
-          <div class="value"></div>
-          <div class="value"></div>
-          <div class="value"></div>
-          <div class="value"></div>
-          <div class="value"></div>
-          <div class="value"></div>
-          <div class="value" :class="{'active': isActive8}">SV1</div>
-          <div class="value" :class="{'active': isActive9}">SV2</div>
-          <div class="value" :class="{'active': isActive10}">TB</div>
+          <div class="value" :class="{'active': isActive3}">Stage 4</div>
+          <div class="value" :class="{'active': isActive4}">Stage 5</div>
+          <div class="value" :class="{'active': isActive5}">Stage 6</div>
         </div>
       </div>
     </div>

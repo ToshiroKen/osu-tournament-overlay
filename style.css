@@ -103,7 +103,8 @@
 
 .box-2,
 .box-3,
-.box-4 {
+.box-4,
+.box-6{
   /* border: 1pt solid rgb(0, 248, 54); */
   display: flex;
   width: 340px;
@@ -159,6 +160,10 @@
 
 .box-3 {
   width: 220px;
+}
+
+.box-6 {
+  width: 350px;
 }
 
 .box-4 {

@@ -30,6 +30,8 @@ Alpine.data('overlay', () => ({
         // The JSDoc on socket.js is not correct and may need to be edited.
         const od = beatmap.stats.od.converted;
         const hp = beatmap.stats.hp.converted;
+        const circles = beatmap.stats.objects.circles;
+        const holds = beatmap.stats.objects.holds;
 
         const stars = beatmap.stats.stars.total;
 
@@ -49,17 +51,12 @@ Alpine.data('overlay', () => ({
         //Instructions: change only the checksum values of the beatmap you want to highlight based on the map type
         //To check, here's the link: http://127.0.0.1:24050/json/v2  then search for "checksum"
         const hash = [
-          "",  // RC1
-          "",  // RC2
-          "",  // RC3
-          "",  // RC4
-          "",  // LN1
-          "",  // LN2
-          "",  // HB1
-          "",  // HB2
-          "",  // SV1
-          "",  // SV2
-          ""  // TB
+          "807fcb7379d81f60e9100699c512fd47",  // Stage 1
+          "966d3059143b76cf0a8db9a4bd004a81",  // Stage 2
+          "6615f5f76f431bdd783b80628bfb0246",  // Stage 3
+          "3d19178ac73320311fd697009ffbb237",  // Stage 4
+          "9a0b2ecdfe77603f0ccb3f30d31ac7f5",  // Stage 5
+          "9ecc403111741b9c15dca399db1fcdc4",  // Stage 6
         ];
         //Clear the isActiveN properties
         for (let i = 0; i < hash.length; i++) {
@@ -90,6 +87,8 @@ Alpine.data('overlay', () => ({
         this.difficultyName = beatmapDifficulty;
         this.odValue = od;
         this.hpValue = hp;
+        this.circlesValue = circles;
+        this.holdsValue = holds;
         this.stars = stars;
         this.beatmapLength = beatmapLength;
         this.bpm = bpmFormatted;
