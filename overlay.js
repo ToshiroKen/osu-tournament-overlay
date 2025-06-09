@@ -52,7 +52,7 @@ Alpine.data('overlay', () => ({
         //To check, here's the link: http://127.0.0.1:24050/json/v2  then search for "checksum"
         const hash = [
           "91c37706fc9be3efe7a4fa7bc688b8f6",  // RC1
-          "",  // RC2
+          "b7ef9ad4e6e6404ab4b212381d5b9730",  // RC2
           "b52fd826136c54491c4de1b3ba9de8a2",  // RC3
           "0a507da3d92a03bdc1458bc3b7ed8557",  // RC4
           "f4560d2ca03252942f09b263b2df92b2",  // RC5
@@ -65,7 +65,7 @@ Alpine.data('overlay', () => ({
           "1dff8461927b75b3232a60f6a795f6a2",  // EX1
           "b19122f90239b91002abf5f4911b60a6",  // EX2
           "2885a8f65232a9ff950773f5cb676722",  // EX3
-          "",  // TB
+          "cbe6b0519a060fdaf975f5d11bff79f3",  // TB
         ];
         //Clear the isActiveN properties
         for (let i = 0; i < hash.length; i++) {
