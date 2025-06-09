@@ -62,7 +62,7 @@ Alpine.data('overlay', () => ({
           "f1677ffff5ae7be7722d436f43fe190d",  // HB1
           "98b5c9902133eab5120b6b612e64e54b",  // HB2
           "747500350dd543b4dd2c64666f8cc469",  // HB3
-          "",  // TB
+          "b8ae6955e1e7cda12150dfdc5d09d05d",  // TB
         ];
         //Clear the isActiveN properties
         for (let i = 0; i < hash.length; i++) {
