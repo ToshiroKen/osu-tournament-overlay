@@ -57,8 +57,8 @@ Alpine.data('overlay', () => ({
           "0a507da3d92a03bdc1458bc3b7ed8557",  // RC4
           "f4560d2ca03252942f09b263b2df92b2",  // RC5
           "8200f2b8238a86c3da092dc3565af08e",  // LN1
-          "",  // LN2
-          "cd8829cc78479a360fc20300b27ef322",  // LN3
+          "9464a39e475b485e1d1514358bab6569",  // LN2
+          "c5f39a4ac66fe8e001521ec8831b86c2",  // LN3
           "ee750473a7fdf872f0bf49d81aca1d3a",  // HB1
           "8becf90da75f97e00ea14e46d7ca2e18",  // HB2
           "3a2433f98638237e152aa112b8f5cbdd",  // HB3
