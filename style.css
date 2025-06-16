@@ -166,8 +166,9 @@
   width: 350px;
 }
 
+/* original: 330px */
 .box-4 {
-  width: 330px;
+  width: 380px;
 
   .inner-box {
 
