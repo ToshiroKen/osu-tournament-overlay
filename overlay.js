@@ -51,18 +51,20 @@ Alpine.data('overlay', () => ({
         //Instructions: change only the checksum values of the beatmap you want to highlight based on the map type
         //To check, here's the link: http://127.0.0.1:24050/json/v2  then search for "checksum"
         const hash = [
-          "97a6873a45c6c44548c3024ec6d26e24",  // RC1
-          "b9064a4249c9714055974aed555df31b",  // RC2
-          "e8c34ba75b5fa3cc397d16fe8228104f",  // RC3
-          "b73bd3cb596dd6d12ec348d87cf5fc7a",  // RC4
-          "9b6c9159b7ff3ceca91a4b09a3da6c8a",  // RC5
-          "d92398e104decc996554c959ef4103ad",  // LN1
-          "b72eac2a0905c8261d6585b4c10cd8b5",  // LN2
-          "96a86886a8fc4f2caa5662db5162f3da",  // LN3
-          "f1677ffff5ae7be7722d436f43fe190d",  // HB1
-          "98b5c9902133eab5120b6b612e64e54b",  // HB2
-          "747500350dd543b4dd2c64666f8cc469",  // HB3
-          "b8ae6955e1e7cda12150dfdc5d09d05d",  // TB
+          "",  // RC1
+          "",  // RC2
+          "",  // RC3
+          "",  // RC4
+          "",  // RC5
+          "",  // RC6
+          "",  // LN1
+          "",  // LN2
+          "",  // LN3
+          "",  // LN4
+          "",  // HB1
+          "",  // HB2
+          "",  // HB3
+          "",  // TB
         ];
         //Clear the isActiveN properties
         for (let i = 0; i < hash.length; i++) {
