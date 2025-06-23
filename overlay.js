@@ -51,20 +51,20 @@ Alpine.data('overlay', () => ({
         //Instructions: change only the checksum values of the beatmap you want to highlight based on the map type
         //To check, here's the link: http://127.0.0.1:24050/json/v2  then search for "checksum"
         const hash = [
-          "f8abb1a890e9fb97eb2b1d538b9c2092",  // RC1
-          "471c62f40184b49bb51879cbf5d8d65f",  // RC2
-          "9d3019b97d329b08c78c114d7e8db06a",  // RC3
-          "a6cd3756795e38db583826b98e68f125",  // RC4
-          "d4e175ed105b3c36bb66900d8c99c7c8",  // RC5
-          "8227522cf8be258a38bb75def15788eb",  // RC6
-          "7bb5b88bff665589869e7a300e4d1d1c",  // LN1
-          "a1726a073d80fb7ff005ca64e37fcb89",  // LN2
-          "7e44fef7dfc371d09db2aeb0d36c5493",  // LN3
-          "d7a4a28fec7a94920f18a9c6313b5af1",  // LN4
-          "2d92593fa4b6e96a689ea4f73693d3ec",  // HB1
-          "22505a615d736bb6f97d05432d4a41f5",  // HB2
-          "7ddeda737dcede4cb7f7840366708c85",  // HB3
-          "50358521aac622b6984b4efcd854f80b",  // TB
+          "603e79969f5090669d1ca049af022ebd",  // RC1
+          "f6f6b07b04e06a379fb6e2cad76d3418",  // RC2
+          "c33f5548225928850d7d3d95350188f6",  // RC3
+          "1f3804a57ffb67ff6a9fce4ebd547b76",  // RC4
+          "a52fea7925ceaccdebf329308106bd30",  // RC5
+          "18a0cf0e4b46f71a356dfe28281a5b52",  // RC6
+          "c463da88ac9c0d249940ab99a30ac752",  // LN1
+          "d7bfaed5f3324f87626cf15fb9b789ea",  // LN2
+          "04955e8dc148690476cdc64c44724ccd",  // LN3
+          "7681f439d61c970bd31c9b8b086e7d17",  // LN4
+          "bafbcf8eee22770d98f3becfe972f279",  // HB1
+          "fee1325fa2ce3c2b5a37a41665e925cb",  // HB2
+          "4f4f98aa289a2fbe17a70f7d4e7aa2fa",  // HB3
+          "d1f5dd398b46ceb55b3a70cb9d024981",  // TB
         ];
         //Clear the isActiveN properties
         for (let i = 0; i < hash.length; i++) {
