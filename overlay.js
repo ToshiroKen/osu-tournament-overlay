@@ -51,23 +51,23 @@ Alpine.data('overlay', () => ({
         //Instructions: change only the checksum values of the beatmap you want to highlight based on the map type
         //To check, here's the link: http://127.0.0.1:24050/json/v2  then search for "checksum"
         const hash = [
-          "6e29b038e5fdf3aeab9bc04503ae6043",  // RC1
-          "5cca66545edb33544c923b44a6ee110b",  // RC2
-          "9f2499b0b079a22b74a82b3d4dc46f31",  // RC3
-          "21a9c81f5756bd1e3dae3f1b04d8bde5",  // RC4
-          "beccea02a208358cc2fb393111f4b57f",  // RC5
-          "75a276894d1051594f07515f7ef33314",  // RC6
-          "120a207de28649528a056ccbf47d41cd",  // LN1
-          "36b0a1528a1eaafba20192eb78322a3e",  // LN2
-          "25459aaa9451884dddf1586913e6d491",  // LN3
-          "14e618330a7bb61db07e2296fa85c6a0",  // LN4
-          "5f758de85da3063b7a89eb3dfacb0b70",  // HB1
-          "3e500ba0b0b74806f2d48bc2c44b2141",  // HB2
-          "f084945b3c29d15d67db034659822f40",  // HB3
-          "f75b5b8ead0c606df8605a1d8659af29",  // EX1
-          "9a3596056c169b228c8d35a50ba7af29",  // EX2
-          "0ba463eabac7da8f282e6f8b97ce8c1e",  // EX3
-          "e20b735bc4d789a8b4086b0613bdfe1c",  // TB
+          "2c785dbae129180d4cd4684ef8e80309",  // RC1
+          "719bbc286058eec98d48f9a911081ead",  // RC2
+          "abe97fc4756cf5a6561057f4ebef09e1",  // RC3
+          "8ae77536f7bbbc98c9ae2a26ea9a1f01",  // RC4
+          "f8dcc4b061ed42c0ef0c1b77578b16c0",  // RC5
+          "0e88ab05ddf7ac8998b4ed5254035a34",  // RC6
+          "fe646e174a0b5e07f34a9f15b2925a84",  // LN1
+          "0ed98c8aa9bc24c2d0f799e9ebaadf13",  // LN2
+          "1f556e45632dea78de39ba9ba8958f87",  // LN3
+          "5df198cced03238affa511b88ded388a",  // LN4
+          "276b55afc3b519c55d21dce5e0a102d3",  // HB1
+          "9109ff34387485b0fa349941e20215aa",  // HB2
+          "5e4661421a033f9ca3bc7f9df387980d",  // HB3
+          "d5016c7b90f429a0cecbb5f7a669495a",  // EX1
+          "69cc031739be1fce98c05d1d45c2f18c",  // EX2
+          "175e9dc276c721c136eadb7abea52e02",  // EX3
+          "",  // TB
         ];
         //Clear the isActiveN properties
         for (let i = 0; i < hash.length; i++) {
