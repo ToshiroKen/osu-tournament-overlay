@@ -57,17 +57,19 @@ Alpine.data('overlay', () => ({
           "8ae77536f7bbbc98c9ae2a26ea9a1f01",  // RC4
           "f8dcc4b061ed42c0ef0c1b77578b16c0",  // RC5
           "0e88ab05ddf7ac8998b4ed5254035a34",  // RC6
+          "0e88ab05ddf7ac8998b4ed5254035a34",  // RC7
           "fe646e174a0b5e07f34a9f15b2925a84",  // LN1
           "0ed98c8aa9bc24c2d0f799e9ebaadf13",  // LN2
           "1f556e45632dea78de39ba9ba8958f87",  // LN3
           "5df198cced03238affa511b88ded388a",  // LN4
+          "5df198cced03238affa511b88ded388a",  // LN5
           "276b55afc3b519c55d21dce5e0a102d3",  // HB1
           "9109ff34387485b0fa349941e20215aa",  // HB2
           "5e4661421a033f9ca3bc7f9df387980d",  // HB3
           "d5016c7b90f429a0cecbb5f7a669495a",  // EX1
           "69cc031739be1fce98c05d1d45c2f18c",  // EX2
           "175e9dc276c721c136eadb7abea52e02",  // EX3
-          "",  // TB
+          "37c17664bb313b58581c2500a7af4d0d",  // TB
         ];
         //Clear the isActiveN properties
         for (let i = 0; i < hash.length; i++) {
