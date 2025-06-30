@@ -51,25 +51,25 @@ Alpine.data('overlay', () => ({
         //Instructions: change only the checksum values of the beatmap you want to highlight based on the map type
         //To check, here's the link: http://127.0.0.1:24050/json/v2  then search for "checksum"
         const hash = [
-          "2c785dbae129180d4cd4684ef8e80309",  // RC1
-          "719bbc286058eec98d48f9a911081ead",  // RC2
-          "abe97fc4756cf5a6561057f4ebef09e1",  // RC3
-          "8ae77536f7bbbc98c9ae2a26ea9a1f01",  // RC4
-          "f8dcc4b061ed42c0ef0c1b77578b16c0",  // RC5
-          "0e88ab05ddf7ac8998b4ed5254035a34",  // RC6
-          "0e88ab05ddf7ac8998b4ed5254035a34",  // RC7
-          "fe646e174a0b5e07f34a9f15b2925a84",  // LN1
-          "0ed98c8aa9bc24c2d0f799e9ebaadf13",  // LN2
-          "1f556e45632dea78de39ba9ba8958f87",  // LN3
-          "5df198cced03238affa511b88ded388a",  // LN4
-          "5df198cced03238affa511b88ded388a",  // LN5
-          "276b55afc3b519c55d21dce5e0a102d3",  // HB1
-          "9109ff34387485b0fa349941e20215aa",  // HB2
-          "5e4661421a033f9ca3bc7f9df387980d",  // HB3
-          "d5016c7b90f429a0cecbb5f7a669495a",  // EX1
-          "69cc031739be1fce98c05d1d45c2f18c",  // EX2
-          "175e9dc276c721c136eadb7abea52e02",  // EX3
-          "37c17664bb313b58581c2500a7af4d0d",  // TB
+          "13f2bb6d091ec44267fdd849daa58fe7",  // RC1
+          "f3ac80fb5f7f06b742ba2c2d368434b1",  // RC2
+          "81ad62dc10ba2bbbc89aa2e3abeec3f8",  // RC3
+          "6c2f984bf3661a4b26bbc4d71c015357",  // RC4
+          "cf7faed09491adca31b4626cf0681b89",  // RC5
+          "f97f7d10fc41a32025b17a112249e4aa",  // RC6
+          "",  // RC7
+          "1f334950c602687a75b46c161252a61e",  // LN1
+          "46dafd6f14dd17f3b9b6a636becf9823",  // LN2
+          "e0915840dcaf00ab1422a9ff7b6c0eb6",  // LN3
+          "1ed3faedb48b3a16ea07dd18b8b4d22c",  // LN4
+          "ec39be629a898e72b6ecab795c8294d5",  // LN5
+          "56e6e1173529e9bca71f9fa42ef51330",  // HB1
+          "78385f1a8a30e6c0682df0c3b1d955c0",  // HB2
+          "d2b59af3998c0f7ecaf6edbc6e54ece4",  // HB3
+          "69d04abfa64959f82a3504af2691d727",  // EX1
+          "7bbc444e6ac5fdbfc21b1ef5a99d77c0",  // EX2
+          "98c59c189d82116ece8e763d4c5a1f42",  // EX3
+          "198d792b937ba99ab2449a2618e94737",  // TB
         ];
         //Clear the isActiveN properties
         for (let i = 0; i < hash.length; i++) {
