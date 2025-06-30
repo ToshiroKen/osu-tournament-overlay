@@ -51,22 +51,22 @@ Alpine.data('overlay', () => ({
         //Instructions: change only the checksum values of the beatmap you want to highlight based on the map type
         //To check, here's the link: http://127.0.0.1:24050/json/v2  then search for "checksum"
         const hash = [
-          "603e79969f5090669d1ca049af022ebd",  // RC1
-          "f6f6b07b04e06a379fb6e2cad76d3418",  // RC2
-          "c33f5548225928850d7d3d95350188f6",  // RC3
-          "1f3804a57ffb67ff6a9fce4ebd547b76",  // RC4
-          "a52fea7925ceaccdebf329308106bd30",  // RC5
-          "18a0cf0e4b46f71a356dfe28281a5b52",  // RC6
-          "18a0cf0e4b46f71a356dfe28281a5b52",  // RC7
-          "c463da88ac9c0d249940ab99a30ac752",  // LN1
-          "d7bfaed5f3324f87626cf15fb9b789ea",  // LN2
-          "04955e8dc148690476cdc64c44724ccd",  // LN3
-          "7681f439d61c970bd31c9b8b086e7d17",  // LN4
-          "7681f439d61c970bd31c9b8b086e7d17",  // LN5
-          "bafbcf8eee22770d98f3becfe972f279",  // HB1
-          "fee1325fa2ce3c2b5a37a41665e925cb",  // HB2
-          "4f4f98aa289a2fbe17a70f7d4e7aa2fa",  // HB3
-          "d1f5dd398b46ceb55b3a70cb9d024981",  // TB
+          "a4d67059934646715aa98ce23e8903ac",  // RC1
+          "95cb6af1780058b1d139ad5bca856536",  // RC2
+          "d8ebea1923d325542500e0a2819e106a",  // RC3
+          "e885448aff4633abf95bc54c9f37f7ba",  // RC4
+          "84bdbc7d7664ab5bfbcd7e21c5d2c717",  // RC5
+          "d1e3d02528624042a28f3982a4826c5f",  // RC6
+          "2fc20307305a61db8c2e78aad86971ac",  // RC7
+          "91cab3bf6d2a720d5e293d53495e7bba",  // LN1
+          "856ff5f401377680d7078a9610d2961c",  // LN2
+          "89ca5909d096c0705dafc095b4cd497d",  // LN3
+          "c567d0d63d1aaca491cdbd93083d4f0b",  // LN4
+          "867f308131433999e2568970ce93e943",  // LN5
+          "",  // HB1
+          "",  // HB2
+          "fd4aa1158df308177a5ccf277b06e001",  // HB3
+          "4e0594bd45f8c3dea2bc4f05d3ffdfc6",  // TB
         ];
         //Clear the isActiveN properties
         for (let i = 0; i < hash.length; i++) {
